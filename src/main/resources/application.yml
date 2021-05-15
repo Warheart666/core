@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=core
+    username: postgres
+    password: 666
+    driver-class-name: org.postgresql.Driver
+    platform: postgresql
+    initialization-mode: always
+    hikari:
+      schema: core
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        default_schema: core
